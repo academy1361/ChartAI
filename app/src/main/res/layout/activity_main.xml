@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ChartAI"
+                android:textColor="@color/text"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تحلیل تکنیکال رایگان و بدون تبلیغات"
+                android:textColor="@color/muted"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_rounded"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="نماد"
+                    android:textColor="@color/muted"/>
+
+                <Spinner
+                    android:id="@+id/symbolSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تایم‌فریم"
+                    android:textColor="@color/muted"
+                    android:layout_marginTop="12dp"/>
+
+                <Spinner
+                    android:id="@+id/timeframeSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/analyzeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:text="تحلیل چارت"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:background="@drawable/bg_button"
+                    android:layout_marginTop="14dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/imageButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="center"
+                android:text="📷  انتخاب تصویر چارت"
+                android:textColor="@color/text"
+                android:textStyle="bold"
+                android:background="@drawable/bg_rounded"
+                android:layout_marginTop="12dp"/>
+
+            <ImageView
+                android:id="@+id/chartImage"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                android:background="@drawable/bg_rounded"
+                android:layout_marginTop="12dp"/>
+
+            <LinearLayout
+                android:id="@+id/resultPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_rounded"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="نتیجه تحلیل"
+                    android:textColor="@color/text"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/signalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="برای شروع روی «تحلیل چارت» بزنید."
+                    android:textColor="@color/text"
+                    android:textSize="17sp"
+                    android:layout_marginTop="14dp"/>
+
+                <TextView
+                    android:id="@+id/scoreText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/muted"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/detailsText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_marginTop="14dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⚠️ این ابزار آموزشی است و توصیه مالی یا تضمین سود نیست."
+                android:textColor="@color/yellow"
+                android:textSize="12sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="30dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
